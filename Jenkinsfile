@@ -1,3 +1,8 @@
+environment {
+    PATH = "/usr/local/bin:$PATH"
+    IMAGE = "flask-book-manager:${env.BUILD_NUMBER}"
+}
+
 pipeline {
     agent any
     environment {
